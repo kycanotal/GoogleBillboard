@@ -1,18 +1,15 @@
 public final static String e = "2.718281828459045235360287471352662497757247093699959574966967627724076630353547594571382178525166427427466391932003059";  
 public void setup()  
 {            
-    for (int scan = 0; scan < e.length() -1; scan++)
+    for (int scan = 0; scan < e.length()-1; scan++)
      {
-     	double truth = Double.parseDouble(e.substring(scan, scan+9))
-     		if (truth(isPrime) == true)
+     	double truth = Double.parseDouble(e.substring(scan, scan+9));
+     		if (isPrime(truth) == true)
      		{
-     			System.out.println(isPrime);
+     			System.out.println(truth);
      		}
      }
-    String substring(int beginIndex, endIndex)
-    String numbers = e.substring(1,11);
-    double decimals = Double.parseDouble(numbers);
-    System.out.println(decimals);//your code here 
+   //your code here 
 }  
 public void draw()  
 {   
@@ -27,3 +24,5 @@ public boolean isPrime(double decimals)
     return false;//your code here   
     return true;  
 } 
+
+
